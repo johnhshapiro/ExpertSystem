@@ -1,0 +1,92 @@
+ActionScript 3.0 ,strong ,implicit with optional explicit typing ,,static 
+Ada ,strong[TS 1] ,explicit ,nominal ,static 
+Aldor ,weak ,implicit ,,static 
+ALGOL 58 ,strong ,explicit ,,static 
+ALGOL 60 ,strong ,explicit ,,static 
+ALGOL 68 ,strong ,explicit ,structural ,static & tagged unions 
+APL ,strong ,,,dynamic 
+Ateji PX ,strong ,explicit ,nominal ,static 
+BASIC ,strong ,explicit ,nominal ,static 
+BeanShell ,strong ,,nominal ,dynamic 
+Boo ,strong ,implicit with optional explicit typing ,,static with optional dynamic typing 
+Bro ,strong ,implicit with optional explicit typing ,nominal ,static 
+C ,weak ,explicit ,nominal ,static 
+Cplusplus ,weak ,explicit with optional implicit typing (by using auto in C++11) ,nominal ,static[TS 2] 
+Csharp ,weak[TS 3] ,implicit with optional explicit typing ,nominal ,static[TS 4] 
+Clean ,strong ,implicit ,,static 
+Clojure ,strong ,implicit with optional explicit typing ,,dynamic 
+COBOL ,strong ,explicit ,nominal ,static 
+ColdFusion (CFML) ,strong ,implicit ,,dynamic 
+Common Lisp ,strong ,implicit with optional explicit typing ,"structural for implicit typing, nominal for explicit typing ","dynamic, some static checking(depending on implementation) "
+Curl ,strong ,,nominal ,
+Cython ,strong ,implicit with optional explicit typing ,nominal (extension types) and structural (Python) ,dynamic with optional static typing 
+D ,weak[TS 3] ,explicit ,nominal ,static 
+Dylan ,strong ,,,dynamic 
+Eiffel ,strong ,,nominal ,static 
+Elixir ,strong ,implicit ,,dynamic 
+Erlang ,strong ,implicit ,,dynamic 
+Euphoria ,strong ,"explicit, implicit with objects ",nominal ,"static, dynamic with objects "
+Fsharp ,strong ,implicit ,nominal ,static 
+Forth ,typeless ,n/a ,n/a ,n/a 
+Fortran ,strong ,explicit[TS 5] ,nominal ,static 
+Gambas ,strong ,explicit ,nominal ,
+GLBasic ,strong ,explicit. Non-explicit declarations available through project options ,nominal ,static 
+Go ,strong ,implicit with optional explicit typing ,structural ,static 
+Gosu ,strong ,partially implicit (local type inference) ,nominal (subclassing) and structural (structural) ,static 
+Groovy ,strong ,implicit with optional explicit typing ,,dynamic with optional static typing 
+Harbour ,strong ,implicit with optional explicit typing ,,dynamic 
+Haskell ,strong ,implicit with optional explicit typing ,structural ,static 
+Haxe ,strong ,implicit with optional explicit typing ,nominal (subclassing) and structural (structural) ,static with optional dynamic typing 
+Io ,strong ,implicit ,,dynamic 
+ISLISP ,strong ,,,dynamic 
+J ,strong ,,,dynamic 
+Java ,strong[2] ,explicit ,nominal ,static 
+JavaScript ,weak ,implicit ,n/a ,dynamic 
+Julia ,strong ,implicit with optional explicit typing[3] ,"structural for implicit typing, nominal for explicit typing ",dynamic 
+Joy ,strong ,,,dynamic 
+Kotlin ,strong ,partially implicit (local type inference) ,nominal ,static 
+LabVIEW ,strong ,,,
+Lua ,strong ,implicit ,,dynamic 
+Maple ,strong ,,,dynamic 
+Mathematica ,strong ,,,dynamic 
+MATLAB M-code ,strong ,,,dynamic 
+Modula-2 ,weak[TS 3] ,explicit ,nominal ,static 
+Modula-3 ,weak[TS 3] ,explicit ,structural ,static 
+Oberon ,strong ,explicit ,nominal ,static and partially dynamic[TS 6] 
+Objective-C ,strong ,explicit ,nominal ,dynamic with optional static typing[4] 
+OCaml ,strong ,implicit with optional explicit typing ,structural (records are nominal) ,static 
+Object Pascal ,strong ,explicit ,nominal ,static 
+Opa ,strong ,implicit with optional explicit typing ,structural ,static 
+Oxygene ,weak ,implicit ,,static 
+Oz-Mozart ,strong ,implicit ,structural ,dynamic 
+Pascal ,weak[TS 3] ,explicit ,nominal ,static 
+Perl 5 ,,implicit ,,dynamic 
+PHP ,,implicit with optional explicit typing ,nominal ,dynamic 
+Plus ,strong ,explicit ,structural ,"static, dynamic (optional) "
+Prolog ,,,,dynamic 
+Pure ,,,,dynamic 
+Python ,strong ,implicit (with optional explicit typing as of 3.5) ,n/a ,dynamic 
+Raku ,,partially implicit[TS 7] ,,dynamic with optional static typing 
+REBOL ,strong ,implicit ,,dynamic 
+RPG ,weak ,,,static 
+Ruby ,strong ,implicit ,n/a ,dynamic 
+Rust ,strong ,implicit with optional explicit typing ,,static 
+S ,,,,dynamic 
+S-Lang ,strong ,implicit ,,dynamic 
+Scala ,strong ,partially implicit (local type inference) ,nominal (subclassing) and structural (structural) ,static 
+Scheme ,strong ,implicit ,,dynamic (latent) 
+Seed7 ,strong ,explicit ,nominal ,static 
+Simula ,strong ,,,static[TS 8] 
+Smalltalk ,strong ,implicit ,,dynamic 
+Swift ,strong ,partially implicit (local type inference) ,nominal (subclassing) and structural (structural) ,static 
+Standard ML ,strong ,implicit with optional explicit typing ,structural ,static 
+Tcl ,,,,dynamic 
+TypeScript ,? ,optional ,structural ,static 
+Visual Basic ,strong ,implicit with optional explicit typing ,nominal ,static 
+Visual Basic .NET ,weak[TS 3] ,explicit ,,static 
+Visual Prolog ,strong ,partially implicit ,nominal ,static 
+Wolfram Language ,strong ,,,dynamic 
+Windows PowerShell ,strong ,implicit ,,dynamic 
+XL ,strong ,,nominal ,static 
+Xojo ,strong ,explicit ,nominal ,static 
+XPath/XQuery ,strong ,partially implicit ,nominal ,dynamic with optional static typing 
