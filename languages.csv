@@ -1,36 +1,35 @@
 Language ,Paradigm(s) ,Type strength ,Type safety ,Expression of types ,Type checking ,Garbage collection ,Intended use 
 C ,imperative ,weak ,unsafe ,explicit ,static ,Optional through external tools ,System
-C# ,"imperative, object-oriented, generic, reflective, functional, event-driven ",strong ,safe (unsafe allowed) ,implicit ,"static, dynamic",Yes ,Application 
-C++ ,"imperative, object-oriented, generic ",strong ,safe (unsafe allowed) ,"explicit, partially implicit ","static, dynamic ",Optional through external tools ,"Application, System "
+Csharp ,"imperative, object-oriented, functional",strong ,safe (unsafe allowed) ,implicit ,"static, dynamic",Yes ,Application 
+Cplusplus ,"imperative, object-oriented ",strong ,safe (unsafe allowed) ,"explicit, partially implicit ","static, dynamic ",Optional through external tools ,"Application, System "
 COBOL ,"imperative, object-oriented ",strong ,safe ,explicit ,static ,No ,Financial
-D ,"imperative, object-oriented, generic ",strong ,safe ,"explicit, optional inferred ","static, dynamic ",Yes ,"Application, System "
+D ,"imperative, object-oriented",strong ,safe ,"explicit, optional inferred ","static, dynamic ",Yes ,"Application, System "
 Dyalect ,"imperative, object-oriented, functional ",strong ,safe ,implicit ,dynamic ,Yes ,Application 
 Ela ,functional ,strong ,safe ,implicit ,dynamic ,Yes ,Application 
-ERRE ,"imperative, procedural ",weak ,unsafe ,explicit ,"static, dynamic ",Yes ,Education 
-Fortran ,"imperative, procedural, object-oriented, generic, concurrent ",strong ,safe ,"explicit, partially implicit ","static, dynamic ",No ,Mathematics
+Fortran ,"imperative, procedural, object-oriented",strong ,safe ,"explicit, partially implicit ","static, dynamic ",No ,Mathematics
 Go ,"Object-oriented, imperative",strong ,safe ,"explicit, optionally inferred ",static ,Yes ,System
-Gosu ,"imperative, object-oriented, generic, functional ",strong ,safe ,"explicit, optionally inferred ",static ,Yes ,Application 
-Groovy ,"imperative, object-oriented, aspect-oriented ",strong ,safe ,implicit ,dynamic ,Yes ,Application 
-Haskell ,"functional, generic, lazy evaluation ",strong ,safe ,"inferred, optional explicit annotations ",static ,Yes ,Application
-Java ,"imperative, object-oriented, generic, reflective ",strong ,safe ,explicit ,static ,Yes ,Application 
-JavaScript ,"imperative, object-oriented, functional, reflective ",weak ,safe ,implicit ,dynamic ,Yes ,Web Development
-Kotlin ,"imperative, object-oriented, procedural, functional, generic, reflective ",strong ,safe ,"explicit, optionally inferred ","static, dynamic",Yes ,Application 
+Gosu ,"imperative, object-oriented, functional ",strong ,safe ,"explicit, optionally inferred ",static ,Yes ,Application 
+Groovy ,"imperative, object-oriented",strong ,safe ,implicit ,dynamic ,Yes ,Application 
+Haskell ,functional,strong ,safe ,"inferred, optional explicit annotations ",static ,Yes ,Application
+Java ,"imperative, object-oriented",strong ,safe ,explicit ,static ,Yes ,Application 
+JavaScript ,"imperative, object-oriented, functional",weak ,safe ,implicit ,dynamic ,Yes ,Web Development
+Kotlin ,"imperative, object-oriented, functional",strong ,safe ,"explicit, optionally inferred ","static, dynamic",Yes ,Application 
 LDPL ,imperative ,strong ,safe ,explicit ,static ,No ,Application
-Logo ,"procedural, functional ",strong ,safe ,implicit ,dynamic ,Yes ,Education 
+Logo ,functional ,strong ,safe ,implicit ,dynamic ,Yes ,Education 
 Luck ,"imperative, functional ",weak ,unsafe ,"explicit, partially inferred ",static ,Yes ,system
-Oberon-2 ,"procedural, imperative, object-oriented ",strong ,safe ,explicit ,static ,Yes ,"Education, System "
+Oberon2 ,"imperative, object-oriented ",strong ,safe ,explicit ,static ,Yes ,"Education, System "
 Objeck ,"object-oriented,functional ",strong ,safe ,explicit ,static ,Yes ,Education 
-Objective-C ,"imperative, object-oriented, reflective, generic",weak ,safe ,explicit ,static ,Yes,Application 
-OCaml ,"object-oriented, functional, imperative, generic ",strong ,safe ,"inferred, optional explicit annotations ",static ,Yes ,Application 
-Oz ,"logic programming, functional, imperative, object-oriented, concurrent ",strong ,safe ,implicit ,dynamic ,Yes ,"Application, Education"
-PARI/GP ,"imperative, procedural ",weak ,unsafe ,implicit ,dynamic ,Yes ,Mathematics
-Perl ,"imperative, procedural, reflective, functional, object-oriented, generic ",weak ,unsafe ,implicit ,"dynamic, static ",yes,Scripting 
-Phix ,"imperative, procedural ",strong ,safe ,"explicit, partially implicit ","dynamic, static ",yes,"Application, Scripting"
+Objectivec ,"imperative, object-oriented",weak ,safe ,explicit ,static ,Yes,Application 
+OCaml ,"object-oriented, functional, imperative",strong ,safe ,"inferred, optional explicit annotations ",static ,Yes ,Application 
+Oz ,"logic, functional, imperative, object-oriented",strong ,safe ,implicit ,dynamic ,Yes ,"Application, Education"
+PARI/GP ,imperative,weak ,unsafe ,implicit ,dynamic ,Yes ,Mathematics
+Perl ,"imperative, functional, object-oriented",weak ,unsafe ,implicit ,"dynamic, static ",yes,Scripting 
+Phix ,imperative,strong ,safe ,"explicit, partially implicit ","dynamic, static ",yes,"Application, Scripting"
 Pop11 ,"imperative, object-oriented, functional ",strong ,safe ,implicit ,dynamic ,Yes ,"Application, Education "
 Prolog ,logic,strong ,safe ,implicit ,dynamic ,Yes ,Linguistics
-Python ,"imperative, object-oriented, functional, aspect-oriented, reflective ",strong ,safe ,implicit ,dynamic ,Yes ,"Application, Education, Scripting "
-R ,"functional, imperative, reflective, array ",strong ,safe ,implicit ,dynamic ,Yes ,"Mathematics, Education"
-Ruby ,"imperative, object-oriented, functional, reflective ",strong ,unsafe ,implicit ,dynamic ,Yes ,"Application, Scripting "
-Scala ,"object-oriented, functional, generic ",strong ,safe ,partially implicit ,static ,Yes ,"Education, Scripting"
-Scheme ,functional ,strong ,safe ,implicit ,dynamic,Yes ,Education 
-Swift ,"imperative, object-oriented, generic ",strong ,safe ,"inferred, optional explicit annotations ",static ,yes,Application 
+Python ,"imperative, object-oriented, functional",strong ,safe ,implicit ,dynamic ,Yes ,"Application, Education, Scripting "
+R ,"functional, imperative",strong ,safe ,implicit ,dynamic ,Yes ,"Mathematics, Education"
+Ruby ,"imperative, object-oriented, functional",strong ,unsafe ,implicit ,dynamic ,Yes ,"Application, Scripting "
+Scala ,"object-oriented, functional",strong ,safe ,partially implicit ,static ,Yes ,"Education, Scripting"
+Scheme ,functional,strong ,safe ,implicit ,dynamic,Yes ,Education 
+Swift ,"imperative, object-oriented",strong ,safe ,"inferred, optional explicit annotations ",static ,yes,Application 
