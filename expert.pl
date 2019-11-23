@@ -37,31 +37,61 @@ askUse :-
             assert(applications(Q))
             assert(applications)
         ),
-        education(Q) :-
-            format("~w?\n", [Q]),
-            Answer = read(yes),
-            (
-                assert(applications(Q))
-                assert(applications)
-            ),
-        mathematics(Q) :-
-            format("~w?\n", [Q]),
-            Answer = read(yes),
-            (
-                assert(applications(Q))
-                assert(applications)
-            ),
-        scripting(Q) :-
-            format("~w?\n", [Q]),
-            Answer = read(yes),
-            (
-                assert(applications(Q))
-                assert(applications)
-            ),
-        linguistics(Q) :-
-            format("~w?\n", [Q]),
-            Answer = read(yes),
-            (
-                assert(applications(Q))
-                assert(applications)
-            ).
+    education(Q) :-
+        format("~w?\n", [Q]),
+        Answer = read(yes),
+        (
+            assert(applications(Q))
+            assert(applications)
+        ),
+    mathematics(Q) :-
+        format("~w?\n", [Q]),
+        Answer = read(yes),
+        (
+            assert(applications(Q))
+            assert(applications)
+        ),
+    scripting(Q) :-
+        format("~w?\n", [Q]),
+        Answer = read(yes),
+        (
+            assert(applications(Q))
+            assert(applications)
+        ),
+    linguistics(Q) :-
+        format("~w?\n", [Q]),
+        Answer = read(yes),
+        (
+            assert(applications(Q))
+            assert(applications)
+        ).
+askParadigms :-
+    write("Does it use the programming paradigm:")
+    object_oriented(Q) :-
+        format("~w?\n", [Q]),
+        Answer = read(yes),
+        (
+            assert(applications(Q))
+            assert(applications)
+        ),
+    imperative(Q) :-
+        format("~w?\n", [Q]),
+        Answer = read(yes),
+        (
+            assert(applications(Q))
+            assert(applications)
+        ),
+    functional(Q) :-
+        format("~w?\n", [Q]),
+        Answer = read(yes),
+        (
+            assert(applications(Q))
+            assert(applications)
+        ),
+    logic(Q) :-
+        format("~w?\n", [Q]),
+        Answer = read(yes),
+        (
+            assert(applications(Q))
+            assert(applications)
+        ).
