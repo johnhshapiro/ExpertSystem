@@ -6,7 +6,7 @@ COBOL ,"imperative, object-oriented ",strong ,safe ,explicit ,static ,No ,Financ
 D ,"imperative, object-oriented",strong ,safe ,"explicit, optional inferred ","static, dynamic ",Yes ,"Application, System "
 Dyalect ,"imperative, object-oriented, functional ",strong ,safe ,implicit ,dynamic ,Yes ,Application 
 Ela ,functional ,strong ,safe ,implicit ,dynamic ,Yes ,Application 
-Fortran ,"imperative, procedural, object-oriented",strong ,safe ,"explicit, partially implicit ","static, dynamic ",No ,Mathematics
+Fortran ,"imperative, object-oriented",strong ,safe ,"explicit, partially implicit ","static, dynamic ",No ,Mathematics
 Go ,"Object-oriented, imperative",strong ,safe ,"explicit, optionally inferred ",static ,Yes ,System
 Gosu ,"imperative, object-oriented, functional ",strong ,safe ,"explicit, optionally inferred ",static ,Yes ,Application 
 Groovy ,"imperative, object-oriented",strong ,safe ,implicit ,dynamic ,Yes ,Application 
