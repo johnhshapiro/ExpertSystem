@@ -41,6 +41,7 @@ guess(swift) :- swift, !.
 
 guess_lang :-
     (
+        repeat,
         guess(PL),
         write("I suggest you use "), write(PL), write("."),nl,
         check_answer
@@ -51,39 +52,265 @@ guess_lang :-
 
 
 /* Classification rules */
-c :- is_true('Will imperative paradigm work?'), is_true('Do you need weak typing?'), is_true('Should it be type unsafe?'), is_true('Type declaration should be: exclusively explicit'), is_true('Is static type checking okay?'), is_true('Are you using it for System?').
-csharp :- is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe (unsafe allowed)?'), is_true('Type declaration should be: exclusively implicit'), is_true('Is static,dynamic type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Application ?').
-cplusplus :- is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe (unsafe allowed)?'), is_true('Type declaration should be: explicit or implicit'), is_true('Is static,dynamic  type checking okay?'), is_true('Are you using it for Application or System ?').
-cobol :- is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: exclusively explicit'), is_true('Is static type checking okay?'), is_true('Are you using it for Financial?').
-d :- is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: explicit or implicit'), is_true('Is static,dynamic  type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Application or System ?').
-dyalect :- is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: exclusively implicit'), is_true('Is dynamic type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Application ?').
-ela :- is_true('Will functional paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: exclusively implicit'), is_true('Is dynamic type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Application ?').
-fortran :- is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: explicit or implicit'), is_true('Is static,dynamic  type checking okay?'), is_true('Are you using it for Mathematics?').
-go :- is_true('Will object-oriented paradigm work?'), is_true('Will imperative paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: explicit or implicit'), is_true('Is static type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for System?').
-gosu :- is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: explicit or implicit'), is_true('Is static type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Application ?').
-groovy :- is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: exclusively implicit'), is_true('Is dynamic type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Application ?').
-haskell :- is_true('Will functional paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: explicit or implicit'), is_true('Is static type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Application?').
-java :- is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: exclusively explicit'), is_true('Is static type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Application ?').
-javascript :- is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), is_true('Do you need weak typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: exclusively implicit'), is_true('Is dynamic type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Web Development?').
-kotlin :- is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: explicit or implicit'), is_true('Is static,dynamic type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Application ?').
-ldpl :- is_true('Will imperative paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: exclusively explicit'), is_true('Is static type checking okay?'), is_true('Are you using it for Application?').
-logo :- is_true('Will functional paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: exclusively implicit'), is_true('Is dynamic type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Education ?').
-oberon2 :- is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: exclusively explicit'), is_true('Is static type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Education or System ?').
-objeck :- is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: exclusively explicit'), is_true('Is static type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Education ?').
-objectivec :- is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Do you need weak typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: exclusively explicit'), is_true('Is static type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Application ?').
-ocaml :- is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), is_true('Will imperative paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: explicit or implicit'), is_true('Is static type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Application ?').
-oz :- is_true('Will logic paradigm work?'), is_true('Will functional paradigm work?'), is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: exclusively implicit'), is_true('Is dynamic type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Application or Education?').
-pari :- is_true('Will imperative paradigm work?'), is_true('Do you need weak typing?'), is_true('Should it be type unsafe?'), is_true('Type declaration should be: exclusively implicit'), is_true('Is dynamic type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Mathematics?').
-perl :- is_true('Will imperative paradigm work?'), is_true('Will functional paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Do you need weak typing?'), is_true('Should it be type unsafe?'), is_true('Type declaration should be: exclusively implicit'), is_true('Is dynamic,static  type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Scripting ?').
-phix :- is_true('Will imperative paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: explicit or implicit'), is_true('Is dynamic,static  type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Application or Scripting?').
-pop11 :- is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: exclusively implicit'), is_true('Is dynamic type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Application or Education ?').
-prolog :- is_true('Will logic paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: exclusively implicit'), is_true('Is dynamic type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Linguistics?').
-python :- is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: exclusively implicit'), is_true('Is dynamic type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Application or Education or Scripting ?').
-r :- is_true('Will functional paradigm work?'), is_true('Will imperative paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: exclusively implicit'), is_true('Is dynamic type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Mathematics or Education?').
-ruby :- is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type unsafe?'), is_true('Type declaration should be: exclusively implicit'), is_true('Is dynamic type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Application or Scripting ?').
-scala :- is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: exclusively implicit'), is_true('Is static type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Education or Scripting?').
-scheme :- is_true('Will functional paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: exclusively implicit'), is_true('Is dynamic type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Education ?').
-swift :- is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Do you need strong typing?'), is_true('Should it be type safe?'), is_true('Type declaration should be: explicit or implicit'), is_true('Is static type checking okay?'), is_true('Do you need built in garbage collection?'), is_true('Are you using it for Application ?').
+c :- 
+	(is_true('Will imperative paradigm work?'), not(is_true('Will object-oriented paradigm work?')), not(is_true('Will functional paradigm work?')), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need weak typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively explicit?'),
+	(is_true('Is static type checking okay?');not(is_true('Is dynamic type checking okay?'))), 
+	is_true('Are you building a(n) System program?').
+csharp :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	(is_true('Do you need strong type safety?');not(is_true('Do you need strong type safety?'))),
+	is_true('Should be type declaration be exclusively implicit?'),
+	(is_true('Is static type checking okay?');is_true('Is dynamic type checking okay?')), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) Application  program?').
+cplusplus :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), not(is_true('Will functional paradigm work?')), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	(is_true('Do you need strong type safety?');not(is_true('Do you need strong type safety?'))),
+	is_true('Should be type declaration be explicit and implicit?'),
+	(is_true('Is static type checking okay?');not(is_true('Is dynamic type checking okay?'))), 
+	(is_true('Are you building a(n) Application program?');is_true('Are you building a(n) System  program?')).
+cobol :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), not(is_true('Will functional paradigm work?')), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively explicit?'),
+	(is_true('Is static type checking okay?');not(is_true('Is dynamic type checking okay?'))), 
+	is_true('Are you building a(n) Financial program?').
+d :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), not(is_true('Will functional paradigm work?')), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be explicit and implicit?'),
+	(is_true('Is static type checking okay?');not(is_true('Is dynamic type checking okay?'))), 
+	is_true('Do you need built in garbage collection?'), 
+	(is_true('Are you building a(n) Application program?');is_true('Are you building a(n) System  program?')).
+dyalect :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively implicit?'),
+	(not(is_true('Is static type checking okay?'));is_true('Is dynamic type checking okay?')), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) Application  program?').
+ela :- 
+	(not(is_true('Will imperative paradigm work?')), not(is_true('Will object-oriented paradigm work?')), is_true('Will functional paradigm work?'), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively implicit?'),
+	(not(is_true('Is static type checking okay?'));is_true('Is dynamic type checking okay?')), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) Application  program?').
+fortran :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), not(is_true('Will functional paradigm work?')), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be explicit and implicit?'),
+	(is_true('Is static type checking okay?');not(is_true('Is dynamic type checking okay?'))), 
+	is_true('Are you building a(n) Mathematics program?').
+go :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), not(is_true('Will functional paradigm work?')), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be explicit and implicit?'),
+	(is_true('Is static type checking okay?');not(is_true('Is dynamic type checking okay?'))), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) System program?').
+gosu :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be explicit and implicit?'),
+	(is_true('Is static type checking okay?');not(is_true('Is dynamic type checking okay?'))), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) Application  program?').
+groovy :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), not(is_true('Will functional paradigm work?')), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively implicit?'),
+	(not(is_true('Is static type checking okay?'));is_true('Is dynamic type checking okay?')), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) Application  program?').
+haskell :- 
+	(not(is_true('Will imperative paradigm work?')), not(is_true('Will object-oriented paradigm work?')), is_true('Will functional paradigm work?'), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be explicit and implicit?'),
+	(is_true('Is static type checking okay?');not(is_true('Is dynamic type checking okay?'))), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) Application program?').
+java :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), not(is_true('Will functional paradigm work?')), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively explicit?'),
+	(is_true('Is static type checking okay?');not(is_true('Is dynamic type checking okay?'))), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) Application  program?').
+javascript :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need weak typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively implicit?'),
+	(not(is_true('Is static type checking okay?'));is_true('Is dynamic type checking okay?')), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) Web Development program?').
+kotlin :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be explicit and implicit?'),
+	(is_true('Is static type checking okay?');is_true('Is dynamic type checking okay?')), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) Application  program?').
+ldpl :- 
+	(is_true('Will imperative paradigm work?'), not(is_true('Will object-oriented paradigm work?')), not(is_true('Will functional paradigm work?')), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively explicit?'),
+	(is_true('Is static type checking okay?');not(is_true('Is dynamic type checking okay?'))), 
+	is_true('Are you building a(n) Application program?').
+logo :- 
+	(not(is_true('Will imperative paradigm work?')), not(is_true('Will object-oriented paradigm work?')), is_true('Will functional paradigm work?'), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively implicit?'),
+	(not(is_true('Is static type checking okay?'));is_true('Is dynamic type checking okay?')), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) Education  program?').
+oberon2 :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), not(is_true('Will functional paradigm work?')), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively explicit?'),
+	(is_true('Is static type checking okay?');not(is_true('Is dynamic type checking okay?'))), 
+	is_true('Do you need built in garbage collection?'), 
+	(is_true('Are you building a(n) Education program?');is_true('Are you building a(n) System  program?')).
+objeck :- 
+	(not(is_true('Will imperative paradigm work?')), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively explicit?'),
+	(is_true('Is static type checking okay?');not(is_true('Is dynamic type checking okay?'))), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) Education  program?').
+objectivec :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), not(is_true('Will functional paradigm work?')), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need weak typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively explicit?'),
+	(is_true('Is static type checking okay?');not(is_true('Is dynamic type checking okay?'))), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) Application  program?').
+ocaml :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be explicit and implicit?'),
+	(is_true('Is static type checking okay?');not(is_true('Is dynamic type checking okay?'))), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) Application  program?').
+oz :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), is_true('Will logic paradigm work?')), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively implicit?'),
+	(not(is_true('Is static type checking okay?'));is_true('Is dynamic type checking okay?')), 
+	is_true('Do you need built in garbage collection?'), 
+	(is_true('Are you building a(n) Application program?');is_true('Are you building a(n) Education program?')).
+pari :- 
+	(is_true('Will imperative paradigm work?'), not(is_true('Will object-oriented paradigm work?')), not(is_true('Will functional paradigm work?')), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need weak typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively implicit?'),
+	(not(is_true('Is static type checking okay?'));is_true('Is dynamic type checking okay?')), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) Mathematics program?').
+perl :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need weak typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively implicit?'),
+	(not(is_true('Is static type checking okay?'));is_true('Is dynamic type checking okay?')), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) Scripting  program?').
+phix :- 
+	(is_true('Will imperative paradigm work?'), not(is_true('Will object-oriented paradigm work?')), not(is_true('Will functional paradigm work?')), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be explicit and implicit?'),
+	(not(is_true('Is static type checking okay?'));is_true('Is dynamic type checking okay?')), 
+	is_true('Do you need built in garbage collection?'), 
+	(is_true('Are you building a(n) Application program?');is_true('Are you building a(n) Scripting program?')).
+pop11 :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively implicit?'),
+	(not(is_true('Is static type checking okay?'));is_true('Is dynamic type checking okay?')), 
+	is_true('Do you need built in garbage collection?'), 
+	(is_true('Are you building a(n) Application program?');is_true('Are you building a(n) Education  program?')).
+prolog :- 
+	(not(is_true('Will imperative paradigm work?')), not(is_true('Will object-oriented paradigm work?')), not(is_true('Will functional paradigm work?')), is_true('Will logic paradigm work?')), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively implicit?'),
+	(not(is_true('Is static type checking okay?'));is_true('Is dynamic type checking okay?')), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) Linguistics program?').
+python :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively implicit?'),
+	(not(is_true('Is static type checking okay?'));is_true('Is dynamic type checking okay?')), 
+	is_true('Do you need built in garbage collection?'), 
+	(is_true('Are you building a(n) Application program?');is_true('Are you building a(n) Education program?');is_true('Are you building a(n) Scripting  program?')).
+r :- 
+	(is_true('Will imperative paradigm work?'), not(is_true('Will object-oriented paradigm work?')), is_true('Will functional paradigm work?'), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively implicit?'),
+	(not(is_true('Is static type checking okay?'));is_true('Is dynamic type checking okay?')), 
+	is_true('Do you need built in garbage collection?'), 
+	(is_true('Are you building a(n) Mathematics program?');is_true('Are you building a(n) Education program?')).
+ruby :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively implicit?'),
+	(not(is_true('Is static type checking okay?'));is_true('Is dynamic type checking okay?')), 
+	is_true('Do you need built in garbage collection?'), 
+	(is_true('Are you building a(n) Application program?');is_true('Are you building a(n) Scripting  program?')).
+scala :- 
+	(not(is_true('Will imperative paradigm work?')), is_true('Will object-oriented paradigm work?'), is_true('Will functional paradigm work?'), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively implicit?'),
+	(is_true('Is static type checking okay?');not(is_true('Is dynamic type checking okay?'))), 
+	is_true('Do you need built in garbage collection?'), 
+	(is_true('Are you building a(n) Education program?');is_true('Are you building a(n) Scripting program?')).
+scheme :- 
+	(not(is_true('Will imperative paradigm work?')), not(is_true('Will object-oriented paradigm work?')), is_true('Will functional paradigm work?'), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be exclusively implicit?'),
+	(not(is_true('Is static type checking okay?'));is_true('Is dynamic type checking okay?')), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) Education  program?').
+swift :- 
+	(is_true('Will imperative paradigm work?'), is_true('Will object-oriented paradigm work?'), not(is_true('Will functional paradigm work?')), not(is_true('Will logic paradigm work?'))), 
+	is_true('Do you need strong typing?'),
+	is_true('Do you need strong type safety?'),
+	is_true('Should be type declaration be explicit and implicit?'),
+	(is_true('Is static type checking okay?');not(is_true('Is dynamic type checking okay?'))), 
+	is_true('Do you need built in garbage collection?'), 
+	is_true('Are you building a(n) Application  program?').
 
 /* Asking questions */
 ask(Q) :-
@@ -112,6 +339,7 @@ check_answer :-
     write("Does this language work for you? "), nl,
     read(yes) ->
         write("Excellent! Good luck on your project!"), nl;
+        write("Uh oh! How about? "), guess(PL), write(PL), nl;
         write("Uh oh!"), nl, fail.
 
 /* Start new query */
@@ -125,98 +353,3 @@ play_again :-
 new_query :- retract(yes(_)),fail.
 new_query :- retract(no(_)),fail.
 new_query.
-
-
-
-
-
-
-% askUse :-
-%     write("Is it used in: ")
-%     web_design(Q) :-
-%         format("~w?\n", [Q]),
-%         Answer = read(yes),
-%         (
-%             assert(web_design(Q))
-%             assert(web_design)
-%         ),
-%     applications(Q) :-
-%         format("~w?\n", [Q]),
-%         Answer = read(yes),
-%         (
-%             assert(applications(Q))
-%             assert(applications)
-%         ),
-%     system(Q) :-
-%         format("~w?\n", [Q]),
-%         Answer = read(yes),
-%         (
-%             assert(applications(Q))
-%             assert(applications)
-%         ),
-
-%     financial(Q) :-
-%         format("~w?\n", [Q]),
-%         Answer = read(yes),
-%         (
-%             assert(applications(Q))
-%             assert(applications)
-%         ),
-%     education(Q) :-
-%         format("~w?\n", [Q]),
-%         Answer = read(yes),
-%         (
-%             assert(applications(Q))
-%             assert(applications)
-%         ),
-%     mathematics(Q) :-
-%         format("~w?\n", [Q]),
-%         Answer = read(yes),
-%         (
-%             assert(applications(Q))
-%             assert(applications)
-%         ),
-%     scripting(Q) :-
-%         format("~w?\n", [Q]),
-%         Answer = read(yes),
-%         (
-%             assert(applications(Q))
-%             assert(applications)
-%         ),
-%     linguistics(Q) :-
-%         format("~w?\n", [Q]),
-%         Answer = read(yes),
-%         (
-%             assert(applications(Q))
-%             assert(applications)
-%         ).
-% askParadigms :-
-%     write("Does it use the programming paradigm:")
-%     object_oriented(Q) :-
-%         format("~w?\n", [Q]),
-%         Answer = read(yes),
-%         (
-%             assert(applications(Q))
-%             assert(applications)
-%         ),
-%     imperative(Q) :-
-%         format("~w?\n", [Q]),
-%         Answer = read(yes),
-%         (
-%             assert(applications(Q))
-%             assert(applications)
-%         ),
-%     functional(Q) :-
-%         format("~w?\n", [Q]),
-%         Answer = read(yes),
-%         (
-%             assert(applications(Q))
-%             assert(applications)
-%         ),
-%     logic(Q) :-
-%         format("~w?\n", [Q]),
-%         Answer = read(yes),
-%         (
-%             assert(applications(Q))
-%             assert(applications)
-%         ).

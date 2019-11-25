@@ -1,29 +1,29 @@
 Language,Paradigm(s),Type strength,Type safety,Expression of types,Type checking,Garbage collection,Intended use 
 C,imperative,weak,unsafe,exclusively explicit,static,Optional through external tools,System
 Csharp,"imperative,object-oriented,functional",strong,safe (unsafe allowed),exclusively implicit,"static,dynamic",Yes,Application 
-Cplusplus,"imperative,object-oriented ",strong,safe (unsafe allowed),explicit or implicit,"static,dynamic ",Optional through external tools,"Application,System "
+Cplusplus,"imperative,object-oriented ",strong,safe (unsafe allowed),explicit and implicit,"static,dynamic ",Optional through external tools,"Application,System "
 COBOL,"imperative,object-oriented ",strong,safe,exclusively explicit,static,No,Financial
-D,"imperative,object-oriented",strong,safe,explicit or implicit,"static,dynamic ",Yes,"Application,System "
+D,"imperative,object-oriented",strong,safe,explicit and implicit,"static,dynamic ",Yes,"Application,System "
 Dyalect,"imperative,object-oriented,functional ",strong,safe,exclusively implicit,dynamic,Yes,Application 
 Ela,functional,strong,safe,exclusively implicit,dynamic,Yes,Application 
-Fortran,"imperative,object-oriented",strong,safe,explicit or implicit,"static,dynamic ",No,Mathematics
-Go,"Object-oriented,imperative",strong,safe,explicit or implicit,static,Yes,System
-Gosu,"imperative,object-oriented,functional ",strong,safe,explicit or implicit,static,Yes,Application 
+Fortran,"imperative,object-oriented",strong,safe,explicit and implicit,"static,dynamic ",No,Mathematics
+Go,"Object-oriented,imperative",strong,safe,explicit and implicit,static,Yes,System
+Gosu,"imperative,object-oriented,functional ",strong,safe,explicit and implicit,static,Yes,Application 
 Groovy,"imperative,object-oriented",strong,safe,exclusively implicit,dynamic,Yes,Application 
-Haskell,functional,strong,safe,explicit or implicit,static,Yes,Application
+Haskell,functional,strong,safe,explicit and implicit,static,Yes,Application
 Java,"imperative,object-oriented",strong,safe,exclusively explicit,static,Yes,Application 
 JavaScript,"imperative,object-oriented,functional",weak,safe,exclusively implicit,dynamic,Yes,Web Development
-Kotlin,"imperative,object-oriented,functional",strong,safe,explicit or implicit,"static,dynamic",Yes,Application 
+Kotlin,"imperative,object-oriented,functional",strong,safe,explicit and implicit,"static,dynamic",Yes,Application 
 LDPL,imperative,strong,safe,exclusively explicit,static,No,Application
 Logo,functional,strong,safe,exclusively implicit,dynamic,Yes,Education 
 Oberon2,"imperative,object-oriented ",strong,safe,exclusively explicit,static,Yes,"Education,System "
 Objeck,"object-oriented,functional ",strong,safe,exclusively explicit,static,Yes,Education 
 Objectivec,"imperative,object-oriented",weak,safe,exclusively explicit,static,Yes,Application 
-OCaml,"object-oriented,functional,imperative",strong,safe,explicit or implicit,static,Yes,Application 
+OCaml,"object-oriented,functional,imperative",strong,safe,explicit and implicit,static,Yes,Application 
 Oz,"logic,functional,imperative,object-oriented",strong,safe,exclusively implicit,dynamic,Yes,"Application,Education"
 PARI,imperative,weak,unsafe,exclusively implicit,dynamic,Yes,Mathematics
 Perl,"imperative,functional,object-oriented",weak,unsafe,exclusively implicit,"dynamic,static ",yes,Scripting 
-Phix,imperative,strong,safe,explicit or implicit,"dynamic,static ",yes,"Application,Scripting"
+Phix,imperative,strong,safe,explicit and implicit,"dynamic,static ",yes,"Application,Scripting"
 Pop11,"imperative,object-oriented,functional ",strong,safe,exclusively implicit,dynamic,Yes,"Application,Education "
 Prolog,logic,strong,safe,exclusively implicit,dynamic,Yes,Linguistics
 Python,"imperative,object-oriented,functional",strong,safe,exclusively implicit,dynamic,Yes,"Application,Education,Scripting "
@@ -31,4 +31,4 @@ R,"functional,imperative",strong,safe,exclusively implicit,dynamic,Yes,"Mathemat
 Ruby,"imperative,object-oriented,functional",strong,unsafe,exclusively implicit,dynamic,Yes,"Application,Scripting "
 Scala,"object-oriented,functional",strong,safe,exclusively implicit,static,Yes,"Education,Scripting"
 Scheme,functional,strong,safe,exclusively implicit,dynamic,Yes,Education 
-Swift,"imperative,object-oriented",strong,safe,explicit or implicit,static,yes,Application 
+Swift,"imperative,object-oriented",strong,safe,explicit and implicit,static,yes,Application 
